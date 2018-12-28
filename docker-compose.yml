@@ -1,0 +1,19 @@
+version: "3"
+services:
+  mongo_node_0:
+    build:
+      context: "."
+      args:
+        INTERNAL_DNS_NAME: "mongo_node_0"
+    ports:
+      - "27018:27017"
+  mongo_node_1:
+    build:
+      context: "."
+      args:
+        INTERNAL_DNS_NAME: "mongo_node_1"
+  mongo_node_2:
+    build:
+      context: "."
+      args:
+        INTERNAL_DNS_NAME: "mongo_node_2"
