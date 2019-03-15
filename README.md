@@ -2,6 +2,7 @@
 
 This is a three node MongoDB [Replica Set](https://docs.mongodb.com/manual/replication/#replication-in-mongodb) implemented as a docker-compose app.
 This is a useful tool for developing against MongoDB features only available on Replica Sets, such as [Change Streams](https://docs.mongodb.com/manual/changeStreams/).
+It is meant to be used as a development tool, not a production-scale cluster.
 The three nodes share the same dockerfile, and are started in replica set mode. There are an additional three steps to activate the replicaset once
 you have built and spun up this app. Here are the commands:
 
